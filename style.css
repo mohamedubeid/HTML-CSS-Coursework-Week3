@@ -1,1 +1,163 @@
 /*  Add your styling here */
+body {
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    width: 375px;
+    margin: auto;
+}
+
+.header {
+  /*  display: flex;*/      /*****/
+  margin: 15px;
+    align-items: center;
+    color: rgb(124, 23, 6);;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+h1{
+    flex: none;
+   margin: 10px auto;
+    font-size: 15px;
+    text-align:center;
+    margin: 15px;
+}
+
+.header > img {
+
+    margin-top: 10px;
+    margin-left: 60px;
+}
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+a:hover{
+    color: rgb(223, 6, 6);
+}
+
+.header-nav-list {
+  /*  display: flex;
+    justify-content: space-between;*/         /*media*/
+    width: 400px;
+    list-style-type: none; 
+    font-size: 12px;
+    margin-left: 100px;
+    padding: 5px;
+}
+.header-nav-list li {
+    margin: 5px;
+}
+
+main div{
+    margin: 10px;
+    text-align: center;
+    color: rgb(124, 23, 6);
+
+
+}
+div img{
+    width: 150px;
+}
+
+#cover img{
+    width: 100%;
+}
+#cover {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+#cover p{
+    width: 200px;
+}
+button{
+    background-color: rgb(114, 8, 8);
+    color: white;
+    border-radius: 20%;
+}
+button:hover{
+    background-color: rgb(199, 37, 37);
+    color:rgb(53, 0, 0)
+}
+.price{
+    font-size: 10px;
+    position: relative;
+}
+
+
+footer {
+    margin: 5em;
+    text-align: center;
+    font-size: 9px;
+}
+h3{
+    font-weight: 300;
+
+}
+footer img{
+    width: 10px;
+    border: 0.5px solid rgb(219, 204, 204);
+    border-radius: 100%;
+    margin: 5px;
+}
+span{
+    color: rgb(194, 173, 173);
+}
+footer ul{
+    list-style-type: none; 
+
+}
+
+#contact{
+    text-align: left;
+    color:rgb(24, 4, 1)
+}
+
+
+
+
+@media  screen and (min-width: 700px) {
+    body{
+        width:80%;
+    }
+    .header-nav-list {
+          display: flex;
+          justify-content: space-between;
+    }
+    main{
+        margin-top: 90px;
+        text-align: center;
+    }
+    section{
+        text-align: center;
+        
+    }
+    #card{
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        text-align: center;
+        width: 80%;
+    }
+    #card img{
+        margin: 30px;
+    }
+    
+    footer,#contact{
+        text-align: center;
+    }
+    #cover img{
+        width: 100%;
+        
+    }
+    #cover {
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+    }
+    #cover p{
+        width: 80%;
+    }
+}
